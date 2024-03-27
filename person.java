@@ -1,7 +1,7 @@
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-public class person{
+public class person extends employee{
     void display(){
         System.out.println("Enter your name");
         Scanner s=new Scanner(System.in);
@@ -17,6 +17,8 @@ public class person{
     }
     public static void main(String args[]){
         person s1=new person();
+        employee e1=new employee();
+        e1.displaydetails();
         s1.display();
         System.out.println();
         System.out.println("Enter your birthdate");
